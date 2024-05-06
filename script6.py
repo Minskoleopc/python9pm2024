@@ -47,4 +47,6 @@ for x in range(10,5,-1):
         continue
     print(x) 
 
-    
+# while loop
+
+
