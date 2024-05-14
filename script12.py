@@ -79,6 +79,7 @@ print(city3[9::-3])
 print(city3[-10:8:1])
 print(city3[-10:-2:1])
 print(city3[2:-2:1])
+print(city3[-2:2])
 
 
 # string methods
