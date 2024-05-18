@@ -83,3 +83,19 @@ city3 = "chandrapur"
 # c  h  a   n  d  r  a  p  u  r
 
 #city3[:len(city3)]
+
+
+first_name = "chinmay"
+
+# 0  1  2  3  4  5  6
+# c  h  i  n  m  a  y
+#-7 -6 -5 -4 -3 -2 -1
+
+#print(first_name[startIndex:Endindex(included):steps])
+print(first_name[1::])
+print(first_name[1:len(first_name):])
+print(first_name[0:6:2])
+print(first_name[1:-1:1])
+print(first_name[-5:-1])
+print(first_name[-1:-7:-2])
+print(first_name[::-1])
