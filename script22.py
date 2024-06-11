@@ -82,6 +82,82 @@ def addToSetA(ss):
 f = addToSetA(setA)
 print(setA)
 
+# lambda functions 
+
+# def add(x,y):
+#     return x + y
+# add(12,4)
+
+
+add = lambda a,b:a+b
+e = add(1,4)
+print(e)
+
+sqr = lambda x : x *  x
+r = sqr(4)
+print(r)
+
+
+# program 2
+# function as parameter to another function
+
+# add = lambda a,b:a+b
+# def addition(fn,a,b):
+#     # fn = lambda a,b:a+b
+#     e = fn(a,b)
+#     return e
+# r = addition(add,12,4)
+# print(r)
+
+# # function as a parameter to another function
+# def subtraction(fn,x,y):
+#     # fn = lambda x,y:x-y
+#     return fn(x,y)
+
+# s = subtraction(lambda x,y:x-y,12,4)
+# print(s)
+
+# # function as a return type
+
+# def greet():
+#     return lambda :"hello"
+# c = greet()
+# print(c())
+
+
+# program 3
+#default
+def add(x = 34,y=4):
+    print(x+y)
+add(12,16)
+
+# positional arguments
+def sub(x,y):
+    return x-y
+r = sub(y = 45,x = 90)
+print(r)
+
+#*args
+def add(*agrs):
+    print(agrs)
+    total = 0
+    for i in agrs:
+        total = total + i
+    return total
+t = add(234,5,6,3,4,5,5,6,7,3,5,6,7,4,6,7,6,7,8)
+print(t)
+
+# **kwargs
+def info(**kwargs):
+    print(kwargs)
+    kwargs['city']= "pune"
+    return kwargs
+r = info(name = "chinmay",age ="34",roll= 78)
+print(r)
+
+
+
+
 
 
 
