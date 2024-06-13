@@ -1,77 +1,186 @@
-# program 1
-# setA = {11,22,33}
-# setA.add(44)
-# print(setA)
+# function
+
+# program 
+
+#int 
+# int as param and inter as a return type
+def add(x,y):
+    return x + y
+r = add(12,3)
+print(r)
 
 
-# #setA.clear()
-# setB = setA.copy()
-# setB.add(33)
-# print(setB)
+# float 
+# float as a parameter and float as return type 
+def add(x,y):
+    return x + y
+t = add(23.5,5.9)
+print(t)
 
-# setA = {11,22,33,44}
-# setA.pop()
-# setA.remove(44)
-
-
-# program 1  
-# setA = {11,22,33}
-# setB = {44,55,66}
-# setC = setA.union(setB)
-# print(setC)
-
-# setN = {11,22,33}
-# setM = {22,55,66}
-# setP  = setN.intersection(setM)
-# print(setP)
-
-
-# setB1 = {66,77,88}
-# setB2 = {55,68,77}
-
-# setB3 = setB1.difference(setB2)
-# setB4 = setB2.difference(setB1)
-
-# print(setB3)
-# print(setB4)
-
-# print(setB2)
-# print(setB1)
-
-# setB1.difference_update(setB2)
-# print(setB1)
-
-
-# setB1 = {66,77,88}
-# setB2 = {55,68,77}
-
-# setB1.intersection(setB2)
-# setB1.intersection_update(setB2)
-# print(setB1)
-
-
-
-# setB1 = {66,77,88}
-# setB2 = {55,68,77}
-
-# # setB3 = setB1.symmetric_difference(setB2)
-# # print(setB3)
-
-# setB1.symmetric_difference_update(setB2)
-# print(setB1)
-
-setA = {11,22,33}
-setB = {11,22}
-
-e = setB.issubset(setA)
-f = setA.issuperset(setB)
+# string 
+# string as parameter and string a return 
+def greet(name):
+    return "hello "+name
+e  = greet("chinmay")
 print(e)
+
+#boolean 
+#boolean as parameter and boolean as return type 
+def canDrive(above18):
+    if  above18:
+        return True
+    else:
+        False
+e = canDrive(True)
+if(e):
+    print("Allowed to drive ....!")
+else:
+    print("Not allowed to drive")
+    
+
+# list
+#list as parameter and list as return type 
+city = ["pune","mumbai","banglore","kolkata"]
+def addCity(lst):
+    lst.append("wardha")
+    return lst
+e = addCity(city)
+print(e)
+print(city)
+
+
+# dict
+# dict as parameter and dictionary as return type 
+
+dict = {
+    "firstName":"chinmay",
+    "lastName":"deshpande"
+}
+
+def addCityToInfo(info):
+    info['city'] = "pune"
+    return info
+f = addCityToInfo(dict)
 print(f)
 
-setN = {11,22,33,44}
-setM = {11,223,335,446}  
-g = setM.isdisjoint(setN)
-print(g)
+# tuple as parameter and tuple as return type 
+def addNum(tupA):
+    tupA = list(tupA)
+    tupA.append(555)
+    tupA = tuple(tupA)
+    return tupA
+a,b,c = addNum((2,3))
+print(a)
+print(b)
+print(canDrive)
+# set as parameter and set as return type 
+
+setA = {11,12,13}
+def addToSetA(ss):
+    ss.add(44)
+    return ss
+f = addToSetA(setA)
+print(setA)
+
+# lambda functions 
+
+# def add(x,y):
+#     return x + y
+# add(12,4)
+
+
+add = lambda a,b:a+b
+e = add(1,4)
+print(e)
+
+sqr = lambda x : x *  x
+r = sqr(4)
+print(r)
+
+
+# program 2
+# function as parameter to another function
+
+# add = lambda a,b:a+b
+# def addition(fn,a,b):
+#     # fn = lambda a,b:a+b
+#     e = fn(a,b)
+#     return e
+# r = addition(add,12,4)
+# print(r)
+
+# # function as a parameter to another function
+# def subtraction(fn,x,y):
+#     # fn = lambda x,y:x-y
+#     return fn(x,y)
+
+# s = subtraction(lambda x,y:x-y,12,4)
+# print(s)
+
+# # function as a return type
+
+# def greet():
+#     return lambda :"hello"
+# c = greet()
+# print(c())
+
+
+# program 3
+#default
+def add(x = 34,y=4):
+    print(x+y)
+add(12,16)
+
+# positional arguments
+def sub(x,y):
+    return x-y
+r = sub(y = 45,x = 90)
+print(r)
+
+#*args
+def add(*agrs):
+    print(agrs)
+    total = 0
+    for i in agrs:
+        total = total + i
+    return total
+t = add(234,5,6,3,4,5,5,6,7,3,5,6,7,4,6,7,6,7,8)
+print(t)
+
+# **kwargs
+def info(**kwargs):
+    print(kwargs)
+    kwargs['city']= "pune"
+    return kwargs
+r = info(name = "chinmay",age ="34",roll= 78)
+print(r)
+
+# list comprehension 
+# [expression : loop : condition]
+
+birthYear = [1989,1990,2000, 2001]
+ages = []
+for i in birthYear:
+    e = 2024-i
+    ages.append(e)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
