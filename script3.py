@@ -52,7 +52,7 @@ if a > b:
 else:
     print("b is greater")
 
-#program 5
+# program 5
 
 a = 10
 b = 50

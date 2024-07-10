@@ -51,8 +51,8 @@ print(max(lst2))
 print(min(lst2))
 
 
-e = [total := total + x for x in lst]
-print(e)
+# e = [total := total + x for x in lst]
+# print(e)
 
 
 

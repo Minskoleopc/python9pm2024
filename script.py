@@ -35,7 +35,6 @@ Cal(12,4)
 Cal(8,2)
 
 # program 4
-
 # function without parameter and without return 
 def add():
     print(9+9)

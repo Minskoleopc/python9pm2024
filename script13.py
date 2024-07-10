@@ -92,7 +92,7 @@ info = ["chinmay","deshpande","7709192441"]
 q9 = '@'.join(info) # "chinmay@deshpande@7709192441"
 print(q9)
 
-# split()
+
 
 
 

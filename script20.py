@@ -58,7 +58,6 @@ print(students)
 
 #program 6
 # names above >= 25
-
 for student in students:
     if(student['age'] >= 25):
         print(student['firstName'])
